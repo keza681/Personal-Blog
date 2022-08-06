@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
   describe 'GET /index' do
- 
     before(:example) { get user_posts_path(10) }
 
     it 'Should check if action return a correct response status' do
