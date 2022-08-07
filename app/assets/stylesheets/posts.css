@@ -1,16 +1,16 @@
 .user-section {
-    display: flex;
+  display: flex;
 }
 
 .profile-user {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: auto;
 }
 
 .comment-posted-user {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -38px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -38px;
 }

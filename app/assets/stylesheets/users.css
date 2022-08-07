@@ -1,39 +1,39 @@
 .data-display {
-    display: flex;
-    flex-direction: row;
-    margin-top: 25%;
-    width: auto;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25%;
+  width: auto;
+  justify-content: space-between;
 }
 
 .row {
-    gap: 30px;
-    border: solid 2px;
-    margin-top: 30px;
+  gap: 30px;
+  border: solid 2px;
+  margin-top: 30px;
 }
 
 .profile-user {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: auto;
 }
 
 .bio {
-    border: solid 2px;
+  border: solid 2px;
 }
 
 .comment-section {
-    border: solid 2px;
-    margin-top: 20px;
+  border: solid 2px;
+  margin-top: 20px;
 }
 
 .button {
-    margin-top: 20px;
-    width: 20%;
+  margin-top: 20px;
+  width: 20%;
 }
 
 .my-boutton {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
