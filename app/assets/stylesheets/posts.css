@@ -1,15 +1,15 @@
-.user-container {
+.user-section {
     display: flex;
 }
 
-.user-pro {
+.profile-user {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     width: auto;
 }
 
-.post-comment {
+.comment-posted-user {
     display: flex;
     justify-content: flex-end;
     margin-top: -38px;

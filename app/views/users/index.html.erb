@@ -1,2 +1,18 @@
-<h1>User#Index</h1>
-<p>Go to posts <a href="/users/index/posts">here</a></p>
+<% @users.each do |user| %>
+    <div class="section">
+      <div class="row">
+        <div class= "col">
+            <img src=<%= 'https://images.pexels.com/photos/157961/portrait-smile-happy-faces-smiling-157961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' %> >
+         </div>
+         <div class="col">
+          <div class="data-display">
+            <%= link_to user_path(user.id) do %>
+            <h2><%= user.name%></h2>
+            <% end %>
+            <p>Number of posts: <%= user.post_ids.count %></p>
+          </div>
+         </div>
+       </div>
+      </div>
+      <%end%>
+    </div>
