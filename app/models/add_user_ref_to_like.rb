@@ -1,0 +1,2 @@
+class AddUserRefToLike < ApplicationRecord
+end
