@@ -1,0 +1,2 @@
+class AddPostRefToComment < ApplicationRecord
+end

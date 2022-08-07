@@ -1,0 +1,2 @@
+class AddPostRefToLike < ApplicationRecord
+end
