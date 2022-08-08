@@ -11,7 +11,8 @@ class Api::V1::CommentsController < ApplicationController
     @comment.user = current_user
 
     if @comment.save
-      render json: { status: 200, message: 'Congratulations! you have successfully created a comment!', content: { comment: @comment } }
+      render json: { status: 200, message: 'Congratulations! you have successfully created a comment!',
+                     content: { comment: @comment } }
     else
       render json: @comment.errors, status: :bad_request, message: 'Oups! Something went wrong. Comment not created'
     end
