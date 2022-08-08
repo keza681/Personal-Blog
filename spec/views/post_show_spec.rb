@@ -2,10 +2,10 @@ require 'rails_helper'
 RSpec.describe 'Post Show page', type: :feature do
   describe 'shows users' do
     before(:each) do
-      first = User.create(name: 'Keza', photo: 'https://url/picture', bio: 'Information Business', email: 'keza@gmail.com',
-                          password: '7654321', post_counter: 1, confirmed_at: Time.now)
-      @sec = User.create(name: 'Ben', photo: 'https://url/picture', bio: 'Information Business', email: 'test@test.com',
-                         password: '7654321', post_counter: 2, confirmed_at: Time.now)
+      first = User.create(name: 'Keza', photo: 'https://url/picture', bio: 'Information Business',
+                          email: 'keza@gmail.com', password: '7654321', post_counter: 1, confirmed_at: Time.now)
+      @sec = User.create(name: 'Ben', photo: 'https://url/picture', bio: 'Information Business',
+                         email: 'test@test.com', password: '7654321', post_counter: 2, confirmed_at: Time.now)
 
       visit root_path
       fill_in 'Email', with: 'keza@gmail.com'

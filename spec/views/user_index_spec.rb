@@ -2,9 +2,11 @@ require 'rails_helper'
 
 describe 'Index page for user', type: :feature do
   before :each do
-    @user1 = User.create(name: 'Keza', photo: 'https://url/picture', bio: 'Information Business', email: 'keza@gmail.com',
+    @user1 = User.create(name: 'Keza', photo: 'https://url/picture', bio: 'Information Business',
+                         email: 'keza@gmail.com',
                          password: '7654321', post_counter: 1, confirmed_at: Time.now)
-    @user2 = User.create(name: 'Ben', photo: 'https://url/picture', bio: 'Information Business', email: 'test@test.com',
+    @user2 = User.create(name: 'Ben', photo: 'https://url/picture', bio: 'Information Business',
+                         email: 'test@test.com',
                          password: '7654321', post_counter: 2, confirmed_at: Time.now)
   end
 

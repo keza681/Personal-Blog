@@ -3,9 +3,11 @@ require 'rails_helper'
 RSpec.describe 'Show user page', type: :feature do
   describe 'At this page We' do
     before(:each) do
-      first = User.create(name: 'Keza', photo: 'https://url/picture', bio: 'Information Business', email: 'keza@gmail.com',
+      first = User.create(name: 'Keza', photo: 'https://url/picture', bio: 'Information Business',
+                          email: 'keza@gmail.com',
                           password: '7654321', post_counter: 1, confirmed_at: Time.now)
-      @sec = User.create(name: 'Ben', photo: 'https://url/picture', bio: 'Information Business', email: 'test@test.com',
+      @sec = User.create(name: 'Ben', photo: 'https://url/picture', bio: 'Information Business',
+                         email: 'test@test.com',
                          password: '7654321', post_counter: 2, confirmed_at: Time.now)
 
       visit root_path
