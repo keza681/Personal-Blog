@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
-    @posts = @user.posts
+    @posts = @user.posts.includes(:comments)
   end
 
   def show
@@ -19,9 +19,11 @@ class PostsController < ApplicationController
     respond_to do |myform|
       myform.html do
         if @new_post.save
+          flash[:notice] = 'Bravo! Post created succefully'
           redirect_to "/users/#{@new_post.author.id}/posts/"
         else
-          render :new, alert: 'Oups!!! Failed to create a post, do it later!!!'
+          flash.now[:error] = 'Oups!!! Failed to create a post, do it later!!!'
+          render :new
         end
       end
     end
