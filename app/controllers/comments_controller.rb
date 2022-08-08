@@ -15,12 +15,11 @@ class CommentsController < ApplicationController
     @add_new_comment.update_comments_counter
 
     if @add_new_comment.save
-      redirect_to "/users/#{@post.author_id}/posts/#{@post.id}",
-                  notice: 'Successfully created your comment, congratulations!'
+      flash[:notice] = 'Congratulations, comment reated successfully!!!'
     else
-      redirect_to "/users/#{@post.author_id}/posts/#{@post.id}",
-                  alert: 'Oups!!! Something went wrong, faild to create your comment!'
+      flash.now[:error] = 'Oups!!! Something went wrong, faild to create your comment!'
     end
+    redirect_to "/users/#{@post.author_id}/posts/#{@post.id}"
   end
 
   def comment_params
